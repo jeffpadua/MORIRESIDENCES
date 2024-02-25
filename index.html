@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicon@latest/css/boxicons.min.css">
 </head>
 <body>
     <header>
- 
-        <div class="nav-bar">
+      
+
+      <div class="nav-bar">
         <a href="" class="logo"><img src="images/logo.png" height="110"/></a> 
             <div class="navigation">
                 <div class="nav-items">
@@ -21,6 +23,7 @@
                     <a href="#"><i class="uil uil-info-circle"></i> Collections</a>
                     <a href="#"><i class="uil uil-document-layout-left"></i> Happenings</a>
                     <a href="#"><i class="uil uil-envelope"></i> Contact Us</a>
+                    <button onclick="openForm()" class="btnSignup-popup">Sign Up</button>
                 </div>                
             </div>
             <i class="uil uil-apps nav-menu-btn"></i>
@@ -32,7 +35,22 @@
         <a href="#"><i class="uil uil-facebook-f"></i></a>
         <a href="#"><i class="uil uil-whatsapp"></i></a>
     </div>    
-    
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required>
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <br>         
+          <label for="number">Number:</label>
+          <input type="number" id="number" name="number" required>
+          <br><br>
+          <button type="submit" class="btn">REGISTER</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+        </form>
+      </form>
+    </div>
 <div class="swiper bg-slider">
 <div class="swiper-wrapper dark-layer">
   <div class="swiper-slide">
@@ -165,6 +183,16 @@
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+      </script>
+      
 
 </body>
 </html>
