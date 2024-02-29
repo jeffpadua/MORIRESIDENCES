@@ -46,6 +46,21 @@ body{
     background: var(--body-bg-color);
 }
 
+.img_deg {
+  float: left;
+  width: 50%;
+  margin-right: 20px;
+}
+
+.img_1{
+  float: left;
+}
+
+.img_2{
+  clear: right;
+}
+
+
 .form-popup {
     display: none;
     position: fixed;
@@ -98,6 +113,10 @@ body{
     color: #fff;
 }
 
+section{
+    position: relative;
+    text-align: center;
+}
 
 .section{
     color: var(--white-color);
@@ -123,7 +142,7 @@ header{
 header.sticky{
     height: calc(4.5rem + 1rem);
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(60px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -178,6 +197,7 @@ header .nav-bar{
     font-size: 1em;
     text-decoration: none;
     text-shadow: var(--text-shadow);
+    
 }
 
 .navigation .nav-items a i{
@@ -344,8 +364,8 @@ header .nav-bar{
 }
 
 .thumbs-container img{
-    width: 125px;
-    height: 90px;
+    width: 100px;
+    height: 60px;
     margin: 0 5px;
     border-radius: 5px;
     cursor: pointer;
@@ -378,8 +398,10 @@ header .nav-bar{
     font-weight: 600;    
 }
 
+
 .about p{
     margin: 25px 0;
+    padding: 30px;
 }
 
 /*=== Media 1100px ===*/
@@ -404,6 +426,7 @@ header .nav-bar{
     .bg-slider-thumbs{
         bottom: 3em;
     }
+
 
 }
 
