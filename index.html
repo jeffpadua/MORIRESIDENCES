@@ -1,256 +1,69 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-    <meta charset="uft-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Mori Residences</title>    
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/parallax.css">
-    <link rel="stylesheet" href="css/slider.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicon@latest/css/boxicons.min.css">
-</head>
+    <head>
+        <meta charset="uft-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mori Residences</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/slider.css">
+    </head>
 <body>
-    <header>
-      
-
-      <div class="nav-bar">
-        <a href="" class="logo"><img src="images/logo.png" height="110"/></a> 
-            <div class="navigation">
-                <div class="nav-items">
-                  <nav>
-                    <i class="uil uil-times nav-close-btn"></i>
-                    <a href="#home">Homepage <i class="uil uil-home"></i></a>
-                    <a href="#about"><i class="uil uil-compass"></i> About Us</a>
-                    <a href="#services"><i class="uil uil-info-circle"></i> Collections</a>
-                    <a href="#contact"><i class="uil uil-document-layout-left"></i> Happenings</a>
-                    <a href="#"><i class="uil uil-envelope"></i> Contact Us</a>
-                    <button onclick="openForm()" class="btnSignup-popup">Sign Up</button>
-                  </nav>
-                  </div>                
-            </div>
-            <i class="uil uil-apps nav-menu-btn"></i>
-        </div>
+    <header class="header" id="header">
+    <nav class="nav">
+        <a href="#" class="nav_logo">
+            <img src="images/logo.png" alt="">
+        </a>
+        <a href="#home" class="nav_link">HOME</a>
+        <a href="#about" class="nav_link">ABOUT</a>
+        <a href="#collections" class="nav_link">COLLECTIONS</a>
+        <a href="#happenings" class="nav_link">HAPPENINGS</a>
+        <a href="#contact" class="nav_link">CONTACT</a>
+    </nav>
     </header>
+    <!-- Home -->
+    <main>
+        <section id="home" class="section-home">
+            <div class="section-content">
+                <div class="section-content-inner">
+                    <h1>Luxury Living <br> Meets Harmony</h1>
+                    <a href="#"><button class="button">Reserve Your Place Now!</button></a>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="section-about">
+        <div class="section-content">
+            <div class="section-content-text">
+            <h1>The Way of Mori</h1>
+            <p>Mori Residences is a New Class of Condo that refines the way in designing living spaces, by rethinking
+                the essentials in product creation and value innovation.
+                <br><br>
+                The sincerity of Mori is to pursue an endless effort in building quality and sustainable homeownership
+                experience that grows beyond the walls, beyond time.
+            </p>
+            </div>
+        </div>
+        </section>
+        <section id="collections" class="section-collections">
+            <div class="section-content-collections">
+                <div class="section-content-text">
+                    <h1>Mori Residences @ Rawang</h1>
+                </div>
+            </div>
+        </section>
+        <section class="section-city">
+            <div class="section-content">
+                <div class="section-content-text">
+                    <h1>Mori City</h1>
+                    <button class="button">Learn More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ABOUT -->
 
-<section class="home">
-      <div class="media-icons">
-        <a href="#"><i class="uil uil-facebook-f"></i></a>
-        <a href="#"><i class="uil uil-whatsapp"></i></a>
-    </div>    
-    <div class="form-popup" id="myForm">
-      <form action="/action_page.php" class="form-container">
-          <label for="fullname">Full Name:</label>
-          <input type="text" id="fullname" name="fullname" required>
-          <br>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <br>         
-          <label for="number">Number:</label>
-          <input type="number" id="number" name="number" required>
-          <br><br>
-          <button type="submit" class="btn">REGISTER</button>
-          <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-        </form>
-      </form>
-    </div>
-<div class="swiper bg-slider">
-<div class="swiper-wrapper dark-layer">
-  <div class="swiper-slide">
-    <img src="./images/bg1.png" alt="">
-    <div class="text-content">
-        <h2 class="title">Mori <span>Residences</span></h2>
-        <p>Your home, your sanctuary, a place to nurture and grow a family. Your home for a lifetime, and generations to come.</p>
-        <button class="read-btn">Register <i class="uil uil-arrow-right"></i></button>
-    </div>
-  </div>
-  <div class="swiper-slide dark-layer">
-    <img src="./images/bg2.png" alt="">
-    <div class="text-content">
-        <h2 class="title">3 TIER GARDENS, <span>39 FACILITIES</span></h2>
-        <p>Breathe in and take in fresh green air, splash into the swimming pool or a laid back session with your family. Take your slice of life however you like.</p>
-        <button class="read-btn">Register <i class="uil uil-arrow-right"></i></button>
-    </div>
-  </div>
-  <div class="swiper-slide dark-layer">
-    <img src="./images/bg3.png" alt="">
-    <div class="text-content">
-        <h2 class="title">GREEN-RE BUILDING, <span>QLASSIC</span></h2>
-        <p>A collaboration with REHDA, GreenRE is the highest certification of its kind for buildings designed to be sustainable, reducing its impact on the environment. The Qlassic award is an independant quality assessment system developed by CIDB to evaluate construction quality.</p>
-        <button class="read-btn">Register <i class="uil uil-arrow-right"></i></button>
-    </div>
-  </div>
-  <div class="swiper-slide dark-layer">
-    <img src="./images/bg4.png" alt="">
-    <div class="text-content">
-        <h2 class="title">SPACIOUS LAYOUT, <span>888 - 1,355 SQ.FT.</span></h2>
-        <p>Practical layouts offer endless possibilities to expand your living space to fit your lifestyle.</p>
-        <button class="read-btn">Register <i class="uil uil-arrow-right"></i></button>
-    </div>
-  </div>
-  <div class="swiper-slide dark-layer">
-    <img src="./images/bg5.png" alt="">
-    <div class="text-content">
-        <h2 class="title">DYNAMIC, FLEXIBLE & <span>HIGH
-            POTENTIAL SHOPLOTS</span></h2>
-        <p>Located in a prime area with great exposure and accessibility, the Jiran shoplots offer spacious interiors and exteriors that can be transformed to suit your vision.</p>
-        <button class="read-btn">Register <i class="uil uil-arrow-right"></i></button>
-    </div>
-  </div>
-
-</div>
-<div class="swiper-button-next"></div>
-<div class="swiper-button-prev"></div>
-</div>
-<div class="bg-slider-thumbs">
-<div class="swiper-wrapper thumbs-container">
-    <img src="images/bg1.png" class="swiper-slide" alt="">
-    <img src="images/bg2.png" class="swiper-slide" alt="">
-    <img src="images/bg3.png" class="swiper-slide" alt="">
-    <img src="images/bg4.png" class="swiper-slide" alt="">
-    <img src="images/bg5.png" class="swiper-slide" alt="">
-</div>
-</div>
-</section>
-
-    <section id="home" class="about section">
-      <h2>Storytelling About Mori</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu dui, sodales ut pulvinar quis, lobortis ut turpis. Nullam in odio auctor, tempor mauris sit amet, aliquam felis. Curabitur eu fermentum enim. Pellentesque lacinia varius magna, sed feugiat erat sollicitudin et. Phasellus mollis eget nisl molestie vulputate. Curabitur at hendrerit ex. Integer aliquet at leo sed tincidunt. Donec volutpat auctor nunc sit amet placerat. Donec euismod finibus sem non placerat. Fusce laoreet ullamcorper nisi, eget tristique ante rhoncus sit amet. Vivamus varius lobortis nulla.
-        Cras felis lacus, facilisis in massa vel, accumsan aliquet metus. Cras tempor venenatis est sit amet hendrerit. Vivamus nec nisl et urna bibendum tristique eget at ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed placerat augue id turpis cursus eleifend. Nunc id neque ex. Vestibulum malesuada laoreet mi. Maecenas nec ante augue.
-        Donec lobortis nibh eu justo interdum convallis. Pellentesque ac orci convallis, tincidunt sapien vel, mattis ante. Cras sagittis mauris ut est vestibulum, eget viverra lacus volutpat. Aenean faucibus congue lorem, at elementum est porttitor sed. Morbi vitae porttitor sem, in pulvinar augue. Suspendisse pellentesque quam a pretium ornare. Quisque vitae elit vehicula, aliquam dui ut, porta enim. Aenean dapibus ornare leo. Praesent interdum metus vehicula, mollis quam ac, rutrum lacus.
-        Duis rutrum ultrices diam, non sollicitudin leo semper non. Donec ultricies et urna at aliquet. Maecenas iaculis elit elit, eu venenatis nibh lacinia sollicitudin. Praesent ac elementum metus. Ut convallis neque id fermentum venenatis. Morbi fermentum, nisl lobortis auctor imperdiet, magna leo feugiat metus, vel pharetra massa justo in felis. Pellentesque eget metus eu massa faucibus interdum. Vivamus facilisis non mauris sed commodo. Ut orci neque, pretium in aliquet ac, lacinia ac nulla.
-        Maecenas cursus, dolor sit amet mattis ullamcorper, mi justo laoreet justo, vel auctor tellus ex eget libero. Integer tincidunt est urna, eu semper ipsum molestie vitae. Suspendisse ut metus eu purus congue dapibus. Fusce in magna sed erat placerat egestas euismod non tortor. Proin bibendum fermentum scelerisque. Vestibulum eu placerat est, eget fringilla augue. Aliquam erat justo, mattis quis nisi at, eleifend vulputate orci. Sed risus eros, vulputate ut bibendum id, sagittis a est. In sit amet laoreet ante. Etiam venenatis vehicula nisl. Curabitur facilisis libero metus, ultrices vulputate eros ultrices non. Morbi eu rhoncus ligula, imperdiet sodales dolor. Proin sit amet arcu nec lectus accumsan molestie. Praesent luctus lacus a sodales scelerisque.
-      </p>
-
-  </section>
-
-  <section id="about" class="about section">
-
-    <h2>Collections</h2>
-   <p><div class="img_1"><img src="images/1.jpg"><p><h2>Mori Residences @ Rawang</h2></p></div>
-      <div class="img_2"><img src="images/2.jpg"><p><h2>Mori City</h2></p></div>
-    </p>
- 
-  </section>
-
-  <section id="services" class="about section">
-    <h2>Happenings</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed lacus interdum, venenatis nulla eu, lobortis ex. Sed non leo venenatis sapien aliquet pretium. Ut neque magna, rhoncus tempus malesuada quis, varius eu ante. Maecenas eleifend, magna at interdum fermentum, turpis lorem lacinia leo, non malesuada ipsum augue pulvinar arcu. Sed lobortis diam a urna congue, ac placerat nisl fermentum. Morbi egestas, quam quis tristique vestibulum, velit massa ornare arcu, sed pellentesque lorem magna sed nunc. Mauris a magna lorem. Praesent enim turpis, semper ac mauris a, sagittis suscipit nisi. Aliquam mi est, fringilla placerat lectus ac, imperdiet interdum urna. Sed commodo elit nibh. Sed ultricies urna magna, ut aliquam neque mattis ac. Curabitur felis orci, auctor sed lacus in, varius congue nisl. Duis commodo orci at leo ultrices, cursus ultrices orci tincidunt.
-      Quisque in turpis et erat pretium venenatis ut ut leo. Aliquam erat volutpat. Quisque et nisl nec purus sollicitudin vehicula mollis vel erat. Sed sagittis, ante vitae suscipit suscipit, magna arcu bibendum ligula, sed tempus mauris lorem ac augue. Quisque laoreet pretium lectus, vel sagittis risus aliquet eget. Integer lorem nunc, rhoncus in dui a, sollicitudin luctus tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet turpis placerat urna pellentesque volutpat eu interdum quam. Sed tellus ante, gravida et dapibus non, pretium ut risus.
-      Curabitur nunc sapien, elementum euismod purus in, sollicitudin elementum lorem. Vivamus vitae leo vitae elit ultricies malesuada. Integer eget convallis urna, ac tempus arcu. Sed in lorem dictum, finibus odio posuere, dapibus nisi. Integer enim odio, pellentesque commodo placerat et, scelerisque vel elit. Pellentesque egestas, tellus in fringilla tristique, arcu ante dapibus ex, sed tincidunt magna nisl eget erat. Maecenas imperdiet enim a ultricies blandit. Suspendisse lacus tortor, sodales ac dolor eu, efficitur posuere odio. Aenean eu tortor vel sem feugiat lacinia. Mauris quis odio turpis. Etiam et facilisis velit, et aliquam odio. Suspendisse vitae molestie ante. Donec tristique ultrices est egestas fringilla. Cras tristique nulla nec dolor blandit vulputate.
-      Mauris porta imperdiet tellus. Praesent eu lectus vehicula, porta magna sed, sagittis neque. Sed molestie efficitur arcu, vel luctus nibh egestas a. Vestibulum rutrum libero sapien, a luctus nisi interdum eu. Maecenas auctor quis mi vitae consectetur. Sed vehicula urna sit amet varius rhoncus. Integer malesuada ullamcorper nisl vitae vestibulum.
-      Vestibulum blandit metus at leo viverra feugiat. Proin imperdiet velit sed ante blandit semper. Aenean augue sem, lobortis fringilla elementum finibus, porttitor eu leo. Pellentesque et fermentum dolor, sed lacinia lorem. Integer hendrerit pulvinar lorem. In at elit id lectus ullamcorper aliquam. Vestibulum ac porta ligula. Nunc id blandit magna, non bibendum quam. Sed hendrerit eu libero id blandit.
-    </p>
-  </section>
-
-  <section id="contact" class="about section">
-    <h2>Mori Story</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed lacus interdum, venenatis nulla eu, lobortis ex. Sed non leo venenatis sapien aliquet pretium. Ut neque magna, rhoncus tempus malesuada quis, varius eu ante. Maecenas eleifend, magna at interdum fermentum, turpis lorem lacinia leo, non malesuada ipsum augue pulvinar arcu. Sed lobortis diam a urna congue, ac placerat nisl fermentum. Morbi egestas, quam quis tristique vestibulum, velit massa ornare arcu, sed pellentesque lorem magna sed nunc. Mauris a magna lorem. Praesent enim turpis, semper ac mauris a, sagittis suscipit nisi. Aliquam mi est, fringilla placerat lectus ac, imperdiet interdum urna. Sed commodo elit nibh. Sed ultricies urna magna, ut aliquam neque mattis ac. Curabitur felis orci, auctor sed lacus in, varius congue nisl. Duis commodo orci at leo ultrices, cursus ultrices orci tincidunt.
-      Quisque in turpis et erat pretium venenatis ut ut leo. Aliquam erat volutpat. Quisque et nisl nec purus sollicitudin vehicula mollis vel erat. Sed sagittis, ante vitae suscipit suscipit, magna arcu bibendum ligula, sed tempus mauris lorem ac augue. Quisque laoreet pretium lectus, vel sagittis risus aliquet eget. Integer lorem nunc, rhoncus in dui a, sollicitudin luctus tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet turpis placerat urna pellentesque volutpat eu interdum quam. Sed tellus ante, gravida et dapibus non, pretium ut risus.
-      Curabitur nunc sapien, elementum euismod purus in, sollicitudin elementum lorem. Vivamus vitae leo vitae elit ultricies malesuada. Integer eget convallis urna, ac tempus arcu. Sed in lorem dictum, finibus odio posuere, dapibus nisi. Integer enim odio, pellentesque commodo placerat et, scelerisque vel elit. Pellentesque egestas, tellus in fringilla tristique, arcu ante dapibus ex, sed tincidunt magna nisl eget erat. Maecenas imperdiet enim a ultricies blandit. Suspendisse lacus tortor, sodales ac dolor eu, efficitur posuere odio. Aenean eu tortor vel sem feugiat lacinia. Mauris quis odio turpis. Etiam et facilisis velit, et aliquam odio. Suspendisse vitae molestie ante. Donec tristique ultrices est egestas fringilla. Cras tristique nulla nec dolor blandit vulputate.
-      Mauris porta imperdiet tellus. Praesent eu lectus vehicula, porta magna sed, sagittis neque. Sed molestie efficitur arcu, vel luctus nibh egestas a. Vestibulum rutrum libero sapien, a luctus nisi interdum eu. Maecenas auctor quis mi vitae consectetur. Sed vehicula urna sit amet varius rhoncus. Integer malesuada ullamcorper nisl vitae vestibulum.
-      Vestibulum blandit metus at leo viverra feugiat. Proin imperdiet velit sed ante blandit semper. Aenean augue sem, lobortis fringilla elementum finibus, porttitor eu leo. Pellentesque et fermentum dolor, sed lacinia lorem. Integer hendrerit pulvinar lorem. In at elit id lectus ullamcorper aliquam. Vestibulum ac porta ligula. Nunc id blandit magna, non bibendum quam. Sed hendrerit eu libero id blandit.
-    </p>
-  </section>
-
-
-  <section class="about section">
-   
-    <h2>The Developer</h2>
-    
-    <p><img class="img_deg" src="images/developer.jpg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed lacus interdum, venenatis nulla eu, lobortis ex. Sed non leo venenatis sapien aliquet pretium. Ut neque magna, rhoncus tempus malesuada quis, varius eu ante. Maecenas eleifend, magna at interdum fermentum, turpis lorem lacinia leo, non malesuada ipsum augue pulvinar arcu. Sed lobortis diam a urna congue, ac placerat nisl fermentum. Morbi egestas, quam quis tristique vestibulum, velit massa ornare arcu, sed pellentesque lorem magna sed nunc. Mauris a magna lorem. Praesent enim turpis, semper ac mauris a, sagittis suscipit nisi. Aliquam mi est, fringilla placerat lectus ac, imperdiet interdum urna. Sed commodo elit nibh. Sed ultricies urna magna, ut aliquam neque mattis ac. Curabitur felis orci, auctor sed lacus in, varius congue nisl. Duis commodo orci at leo ultrices, cursus ultrices orci tincidunt.
-      Quisque in turpis et erat pretium venenatis ut ut leo. Aliquam erat volutpat. Quisque et nisl nec purus sollicitudin vehicula mollis vel erat. Sed sagittis, ante vitae suscipit suscipit, magna arcu bibendum ligula, sed tempus mauris lorem ac augue. Quisque laoreet pretium lectus, vel sagittis risus aliquet eget. Integer lorem nunc, rhoncus in dui a, sollicitudin luctus tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet turpis placerat urna pellentesque volutpat eu interdum quam. Sed tellus ante, gravida et dapibus non, pretium ut risus.
-      Curabitur nunc sapien, elementum euismod purus in, sollicitudin elementum lorem. Vivamus vitae leo vitae elit ultricies malesuada. Integer eget convallis urna, ac tempus arcu. Sed in lorem dictum, finibus odio posuere, dapibus nisi. Integer enim odio, pellentesque commodo placerat et, scelerisque vel elit. Pellentesque egestas, tellus in fringilla tristique, arcu ante dapibus ex, sed tincidunt magna nisl eget erat. Maecenas imperdiet enim a ultricies blandit. Suspendisse lacus tortor, sodales ac dolor eu, efficitur posuere odio. Aenean eu tortor vel sem feugiat lacinia. Mauris quis odio turpis. Etiam et facilisis velit, et aliquam odio. Suspendisse vitae molestie ante. Donec tristique ultrices est egestas fringilla. Cras tristique nulla nec dolor blandit vulputate.
-      Mauris porta imperdiet tellus. Praesent eu lectus vehicula, porta magna sed, sagittis neque. Sed molestie efficitur arcu, vel luctus nibh egestas a. Vestibulum rutrum libero sapien, a luctus nisi interdum eu. Maecenas auctor quis mi vitae consectetur. Sed vehicula urna sit amet varius rhoncus. Integer malesuada ullamcorper nisl vitae vestibulum.
-      Vestibulum blandit metus at leo viverra feugiat. Proin imperdiet velit sed ante blandit semper. Aenean augue sem, lobortis fringilla elementum finibus, porttitor eu leo. Pellentesque et fermentum dolor, sed lacinia lorem. Integer hendrerit pulvinar lorem. In at elit id lectus ullamcorper aliquam. Vestibulum ac porta ligula. Nunc id blandit magna, non bibendum quam. Sed hendrerit eu libero id blandit.
-    </p>
-  </section>
-
-  <section class="about section">
-    <h2>Vision</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed lacus interdum, venenatis nulla eu, lobortis ex. Sed non leo venenatis sapien aliquet pretium. Ut neque magna, rhoncus tempus malesuada quis, varius eu ante. Maecenas eleifend, magna at interdum fermentum, turpis lorem lacinia leo, non malesuada ipsum augue pulvinar arcu. Sed lobortis diam a urna congue, ac placerat nisl fermentum. Morbi egestas, quam quis tristique vestibulum, velit massa ornare arcu, sed pellentesque lorem magna sed nunc. Mauris a magna lorem. Praesent enim turpis, semper ac mauris a, sagittis suscipit nisi. Aliquam mi est, fringilla placerat lectus ac, imperdiet interdum urna. Sed commodo elit nibh. Sed ultricies urna magna, ut aliquam neque mattis ac. Curabitur felis orci, auctor sed lacus in, varius congue nisl. Duis commodo orci at leo ultrices, cursus ultrices orci tincidunt.
-      Quisque in turpis et erat pretium venenatis ut ut leo. Aliquam erat volutpat. Quisque et nisl nec purus sollicitudin vehicula mollis vel erat. Sed sagittis, ante vitae suscipit suscipit, magna arcu bibendum ligula, sed tempus mauris lorem ac augue. Quisque laoreet pretium lectus, vel sagittis risus aliquet eget. Integer lorem nunc, rhoncus in dui a, sollicitudin luctus tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet turpis placerat urna pellentesque volutpat eu interdum quam. Sed tellus ante, gravida et dapibus non, pretium ut risus.
-      Curabitur nunc sapien, elementum euismod purus in, sollicitudin elementum lorem. Vivamus vitae leo vitae elit ultricies malesuada. Integer eget convallis urna, ac tempus arcu. Sed in lorem dictum, finibus odio posuere, dapibus nisi. Integer enim odio, pellentesque commodo placerat et, scelerisque vel elit. Pellentesque egestas, tellus in fringilla tristique, arcu ante dapibus ex, sed tincidunt magna nisl eget erat. Maecenas imperdiet enim a ultricies blandit. Suspendisse lacus tortor, sodales ac dolor eu, efficitur posuere odio. Aenean eu tortor vel sem feugiat lacinia. Mauris quis odio turpis. Etiam et facilisis velit, et aliquam odio. Suspendisse vitae molestie ante. Donec tristique ultrices est egestas fringilla. Cras tristique nulla nec dolor blandit vulputate.
-      Mauris porta imperdiet tellus. Praesent eu lectus vehicula, porta magna sed, sagittis neque. Sed molestie efficitur arcu, vel luctus nibh egestas a. Vestibulum rutrum libero sapien, a luctus nisi interdum eu. Maecenas auctor quis mi vitae consectetur. Sed vehicula urna sit amet varius rhoncus. Integer malesuada ullamcorper nisl vitae vestibulum.
-      Vestibulum blandit metus at leo viverra feugiat. Proin imperdiet velit sed ante blandit semper. Aenean augue sem, lobortis fringilla elementum finibus, porttitor eu leo. Pellentesque et fermentum dolor, sed lacinia lorem. Integer hendrerit pulvinar lorem. In at elit id lectus ullamcorper aliquam. Vestibulum ac porta ligula. Nunc id blandit magna, non bibendum quam. Sed hendrerit eu libero id blandit.
-    </p>
-  </section>
-
-  <section class="about section">
-    <h2>Value</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed lacus interdum, venenatis nulla eu, lobortis ex. Sed non leo venenatis sapien aliquet pretium. Ut neque magna, rhoncus tempus malesuada quis, varius eu ante. Maecenas eleifend, magna at interdum fermentum, turpis lorem lacinia leo, non malesuada ipsum augue pulvinar arcu. Sed lobortis diam a urna congue, ac placerat nisl fermentum. Morbi egestas, quam quis tristique vestibulum, velit massa ornare arcu, sed pellentesque lorem magna sed nunc. Mauris a magna lorem. Praesent enim turpis, semper ac mauris a, sagittis suscipit nisi. Aliquam mi est, fringilla placerat lectus ac, imperdiet interdum urna. Sed commodo elit nibh. Sed ultricies urna magna, ut aliquam neque mattis ac. Curabitur felis orci, auctor sed lacus in, varius congue nisl. Duis commodo orci at leo ultrices, cursus ultrices orci tincidunt.
-      Quisque in turpis et erat pretium venenatis ut ut leo. Aliquam erat volutpat. Quisque et nisl nec purus sollicitudin vehicula mollis vel erat. Sed sagittis, ante vitae suscipit suscipit, magna arcu bibendum ligula, sed tempus mauris lorem ac augue. Quisque laoreet pretium lectus, vel sagittis risus aliquet eget. Integer lorem nunc, rhoncus in dui a, sollicitudin luctus tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet turpis placerat urna pellentesque volutpat eu interdum quam. Sed tellus ante, gravida et dapibus non, pretium ut risus.
-      Curabitur nunc sapien, elementum euismod purus in, sollicitudin elementum lorem. Vivamus vitae leo vitae elit ultricies malesuada. Integer eget convallis urna, ac tempus arcu. Sed in lorem dictum, finibus odio posuere, dapibus nisi. Integer enim odio, pellentesque commodo placerat et, scelerisque vel elit. Pellentesque egestas, tellus in fringilla tristique, arcu ante dapibus ex, sed tincidunt magna nisl eget erat. Maecenas imperdiet enim a ultricies blandit. Suspendisse lacus tortor, sodales ac dolor eu, efficitur posuere odio. Aenean eu tortor vel sem feugiat lacinia. Mauris quis odio turpis. Etiam et facilisis velit, et aliquam odio. Suspendisse vitae molestie ante. Donec tristique ultrices est egestas fringilla. Cras tristique nulla nec dolor blandit vulputate.
-      Mauris porta imperdiet tellus. Praesent eu lectus vehicula, porta magna sed, sagittis neque. Sed molestie efficitur arcu, vel luctus nibh egestas a. Vestibulum rutrum libero sapien, a luctus nisi interdum eu. Maecenas auctor quis mi vitae consectetur. Sed vehicula urna sit amet varius rhoncus. Integer malesuada ullamcorper nisl vitae vestibulum.
-      Vestibulum blandit metus at leo viverra feugiat. Proin imperdiet velit sed ante blandit semper. Aenean augue sem, lobortis fringilla elementum finibus, porttitor eu leo. Pellentesque et fermentum dolor, sed lacinia lorem. Integer hendrerit pulvinar lorem. In at elit id lectus ullamcorper aliquam. Vestibulum ac porta ligula. Nunc id blandit magna, non bibendum quam. Sed hendrerit eu libero id blandit.
-    </p>
-  </section>
-
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-      function openForm() {
-        document.getElementById("myForm").style.display = "block";
-      }
-      
-      function closeForm() {
-        document.getElementById("myForm").style.display = "none";
-      }
-      </script>
-   <script>
-    function smoothScroll(target, duration) {
-        var target = document.querySelector(target);
-        var targetPosition = target.getBoundingClientRect().top;
-        var startPosition = window.pageYOffset;
-        var distance = targetPosition - startPosition;
-        var startTime = null;
-
-        function animation(currentTime) {
-            if (startTime === null) startTime = currentTime;
-            var timeElapsed = currentTime - startTime;
-            var run = easing(timeElapsed, startPosition, distance, duration);
-            window.scrollTo(0, run);
-            if (timeElapsed < duration) requestAnimationFrame(animation);
-        }
-
-        function easing(t, b, c, d) {
-            t /= d / 2;
-            if (t < 1) return c / 2 *t * t + b;
-            t--;
-            return -c / 2 * (t * (t - 2) - 1) + b;
-        }
-
-        requestAnimationFrame(animation);
-    }
-
-    var home = document.querySelector('#home');
-    var about = document.querySelector('#about');
-    var services = document.querySelector('#services');
-    var contact = document.querySelector('#contact');
-
-    var homeLink = document.querySelector('nav a[href="#home"]');
-    var aboutLink = document.querySelector('nav a[href="#about"]');
-    var servicesLink = document.querySelector('nav a[href="#services"]');
-    var contactLink = document.querySelector('nav a[href="#contact"]');
-
-    homeLink.addEventListener('click', function() {
-        smoothScroll('#home', 1000);
-    });
-
-    aboutLink.addEventListener('click', function() {
-        smoothScroll('#about', 1000);
-    });
-
-    servicesLink.addEventListener('click', function() {
-        smoothScroll('#services', 1000);
-    });
-
-    contactLink.addEventListener('click', function() {
-        smoothScroll('#contact', 1000);
-    });
-</script>
 
 </body>
 </html>
